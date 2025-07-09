@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Best Coffee</title>
+
+    <!-- Description for SEO -->
+    <meta
+      name="description"
+      content="Cozy Beans Coffee Shop – Enjoy the rich aroma of freshly brewed coffee, cozy ambiance, and delicious pastries every day. Visit us or order online!"
+    />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta
+      property="og:title"
+      content="Cozy Beans | Freshly Brewed Coffee Everyday"
+    />
+    <meta
+      property="og:description"
+      content="Discover the best coffee in town at Cozy Beans. Warm atmosphere, handcrafted drinks, and sweet treats await you."
+    />
+    <meta property="og:image" content="./pic/coffee-hero-section.png" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- font awsome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- auto animation  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link rel="icon" href="./pic/coffee-hero-section.ico" />
+  </head>
+  <body>
+    <div class="navbar toggle">
+           <ul>
+            <div>
+                 <h1 style="margin-bottom: 1em; display: flex; justify-content: center;">Coffee</h1>
+            </div>
+            <a href="#">> Home</a>
+            <a href="#">> About</a>
+            <a href="#">> Menu</a>
+            <a href="#">> Gallery</a>
+            <a href="#">> Contact</a>
+          </ul>
+    </div>
+    <header>
+
+      <nav>
+        <!-- letf side  nav bar-->
+        <div class="title">
+          <i class="fa-solid fa-mug-saucer"></i>
+          <h1>Coffee</h1>
+        </div>
+
+        <!-- right side  nav bar-->
+        <div class="navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <i  class="visible visiblex fa-solid fa-bars"  onclick="toggleMenu()"></i>
+      </nav>
+
+      <!-- main header -->
+      <section class="main-section">
+        <!-- left side header -->
+
+        <div class="left-text">
+          <h2>Best Coffe</h2>
+          <h3>Make your day great with our special coffee</h3>
+          <p>
+            Welcome to our coffee paradies where every bean tells <br />
+            a story and every cup sparks joy
+          </p>
+          <div class="naviation-header">
+            <a class="order" href="#">Order Now</a>
+            <a class="contact" href="#">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- right side header  image-->
+        <div class="image">
+          <img src="./pic/coffee-hero-section.png" alt="header image" />
+        </div>
+      </section>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- about us section -->
+      <section class="about-us">
+        <!-- left-side image -->
+        <div class="image-about">
+          <img src="./pic/about-image.jpg" alt="" />
+        </div>
+
+        <!-- text -->
+        <div class="text">
+          <h2>ABOUT US</h2>
+          <hr />
+          <p>
+            At Coffee House in Berndorf, Germany, we pride ourselves on being a
+            go-to destination for coffee lovers and conversation seekers alike.
+            We’re dedicated to providing an exceptional coffee experience in a
+            cozy and inviting atmosphere, where guests can relax, unwind, and
+            enjoy their time in comfort.
+          </p>
+
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- menu -->
+      <section class="menu">
+        <h2>OUR MENU</h2>
+        <hr />
+        <div class="container">
+          <!-- card 1 -->
+          <div class="card">
+            <img src="./pic/hot-beverages.png" alt="menu-image" />
+            <h3>Hot Beverages</h3>
+            <p>
+              Warm up with our rich, aromatic coffee, creamy lattes, and
+              comforting teas – perfect for any time of day.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div class="card">
+            <img src="./pic/cold-beverages.png" alt="menu-image" />
+            <h3>Cold Beverages</h3>
+            <p>
+              Refresh your senses with our chilled iced coffees, smoothies, and
+              freshly prepared cold drinks.
+            </p>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card">
+            <img src="./pic/desserts.png" alt="menu-image" />
+            <h3>Desserts</h3>
+            <p>
+              Indulge in our delightful range of cakes, pastries, and sweet
+              treats made fresh every day.
+            </p>
+          </div>
+
+          <!-- card 4 -->
+          <div class="card">
+            <img src="./pic/special-combo.png" alt="menu-image" />
+            <h3>Special Combo</h3>
+            <p>
+              Savor the perfect pairing of your favorite drinks with tasty
+              snacks in our hand-picked combos.
+            </p>
+          </div>
+
+          <!-- card 5 -->
+          <div class="card">
+            <img src="./pic/burger-frenchfries.png" alt="menu-image" />
+            <h3>Burger & French Fries</h3>
+            <p>
+              Enjoy juicy burgers and crispy fries, served hot and fresh to
+              satisfy your cravings.
+            </p>
+          </div>
+
+          <!-- card 6 -->
+          <div class="card">
+            <img src="./pic/refreshment.png" alt="menu-image" />
+            <h3>Refreshment</h3>
+            <p>
+              Stay cool and energized with our refreshing juices, flavored
+              sodas, and healthy choices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="gallery">
+        <h2>GALLARY</h2>
+        <hr />
+        <div class="container">
+          <img src="./pic/gallery-1.jpg" alt="gallery-image " />
+          <img src="./pic/gallery-2.jpg" alt="gallery-image " />
+          <img src="./pic/gallery-3.jpg" alt="gallery-image " />
+          <img src="./pic/gallery-4.jpg" alt="gallery-image " />
+          <img src="./pic/gallery-5.jpg" alt="gallery-image " />
+          <img src="./pic/gallery-6.jpg" alt="gallery-image " />
+        </div>
+      </section>
+
+      <!-- contact us -->
+
+      <section class="contact-us">
+        <h2>Contact-us</h2>
+        <hr>
+        <div class="container">
+          <div class="contact-info">
+            <p>
+              <i class="fa-solid fa-location-crosshairs"></i> 123 Coffee Street,
+              Cairo, Egypt
+            </p>
+            <p><i class="fa-solid fa-envelope"></i> contact@coffeehouse.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i> +20 123 456 789</p>
+            <p>
+              <i class="fa-solid fa-clock"></i> Monday - Friday: 8:00 AM - 10:00
+              PM
+            </p>
+            <p>
+              <i class="fa-solid fa-clock"></i> Saturday: 9:00 AM - 11:00 PM
+            </p>
+            <p><i class="fa-solid fa-clock"></i> Sunday: Closed</p>
+            <p><i class="fa-solid fa-globe"></i> www.coffeehouse.com</p>
+          </div>
+
+          <form action="" class="contact2">
+            <input name="name" type="text" placeholder="Your name" required />
+            <input name="email" type="email" placeholder="Your email" required />
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <input id="btn" class="btn" type="submit" value="sumit">
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

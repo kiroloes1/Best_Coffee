@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Lexend:wght@100..900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f1ebeb;
+}
+
+header{
+    background-color:#421c24;
+    min-height: fit-content;
+    padding: 1em;
+    width: 100%;
+
+    
+    
+}
+nav {
+    display: flex;
+    
+    justify-content: space-between;
+    margin: 0 5em 2em 5em;
+    align-items: center;
+}
+
+
+
+/* left side nav bar */
+nav .title{
+    display: flex;
+    align-items: center;
+
+}
+nav .title i{
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    color: rgb(175, 172, 166);
+}
+nav .title i:hover{
+    cursor: pointer;
+    transform: rotate(-25deg);
+    transition: 0.5s ease-in-out;
+}
+
+nav .title h1{
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+nav .title h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* right side nav bar */
+nav .navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+nav .navigation ul li{
+   margin-left: 2.5em;
+}
+nav .navigation ul li a:hover{
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-width: 3px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+}
+
+/* ########################################## */
+/* main */
+/* header */
+ .main-section{
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+    height: 100vh;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+   
+}
+
+ .main-section .left-text h2{
+ font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #f7941d; /* نفس لون الخط في الصورة */
+}
+
+ .main-section .left-text h3{
+    font-size: 1.8em;
+    color: aliceblue;
+    margin: 5px 0;
+}
+
+
+.main-section .left-text p{
+    color: aliceblue;
+    margin: 5px 0;
+}
+
+ .main-section .left-text .naviation-header{
+   display: flex;
+   
+}
+
+ .main-section .left-text .naviation-header a{
+   margin: 2em 0 ;
+   margin-right: 3em;
+   text-decoration: none;
+   
+   padding: 0.5em 1em;
+   border-radius: 0.5em;
+   font-size: 1.1em;
+   justify-self: center;
+}
+
+ .main-section .naviation-header a:hover{
+transform: scale(1.1);
+transition: 0.5s ease-in-out;
+}
+
+.order{
+    background-color: #f7941d;
+    color: #421c24;
+}
+.order:hover{
+     background-color: #421c24;
+     color: aliceblue;
+      border-style: double;
+
+}
+ .contact{
+   border-style: double;
+   color: aliceblue;
+
+}
+.contact:hover{
+    border-style: none;
+    background-color: #f7941d;
+    color: #421c24;
+}
+
+/* image */
+
+ .image{
+    width: 28em;
+    margin: 100px 0 0 0;
+}
+ .image img{
+    width: 100%;
+}
+/* ########################################## */
+
+main .about-us{
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+    margin-top: 5em;
+    padding: 10px  2em;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.about-us .image-about{
+    width:25em;
+    height: 25em;
+    margin: 10px;
+    
+}
+.about-us .image-about img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+main .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+.text h2{
+    font-size:1.8em;
+   
+    font-weight: 700;
+}
+ hr{
+    width:7em;
+     margin-bottom: 1em;
+     height: 3px;
+     border-style: solid;
+     background-color: #f7941d;
+     border-style: hidden;
+
+}
+.text p{
+   width: 30em;
+   display: flex;
+   text-align: center;
+}
+
+.text .social-media {
+      margin-top: 1em;
+      display: flex;
+      justify-content: center;
+}
+.text .social-media i{
+      margin-right: 1em;
+      font-size: 1.3em;
+}
+.social-media i:hover{
+    transform: rotate(25deg);
+    transition: 0.5s ease-in-out;
+}
+.fa-facebook:hover {
+    color:rgb(43, 43, 204)
+}
+.fa-instagram:hover {
+    color:rgb(231, 117, 10)
+}
+.fa-square-whatsapp:hover {
+    color:rgb(8, 204, 66)
+}
+
+
+/* ############################# */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+    background-color: #312f2f;
+
+}
+.menu h2{
+    font-size: 1.8em;
+    color:aliceblue;
+    margin: 1em 0 0 0;
+}
+.menu .container{
+ 
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 2em 0;
+
+}
+.menu .container .card{
+    width: 30em;
+    min-height: min-content;
+    margin: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.menu .container .card img{
+    width: 50%;
+}
+.menu .card h3{
+    color: aliceblue;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 1.4em;
+
+}
+.menu .card p{
+    color: rgba(240, 248, 255, 0.705);
+    margin: 10px;
+    
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 0 ;
+    padding: 2em;
+
+}
+
+.gallery .container{
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+.gallery .container img{
+    width: 25vw;
+    margin: 0.7em;
+    border-radius: 1em;
+}
+/* ########################## */
+
+
+.contact-us h2{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.contact-us hr{
+    display: flex;
+    justify-self: center;
+    
+}
+.contact-us .container{
+     margin: 3em 5em;
+     display:flex;
+     justify-content:space-between;
+     align-items: center;
+     flex-wrap: wrap-reverse;
+
+}
+.contact-us .contact-info p{
+    color: #000000bb;
+    line-height: 30px;
+}
+.contact-us .contact-info i{
+    color: #000000;
+}
+.contact-us .container .contact2{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.contact-us .container .contact2 input ,textarea{
+    width: 35em;
+    margin: 0.7em 0;
+    height: 2.8em;
+    border-radius: 0.5em;
+    border-style: none;
+    padding: 10px;
+}
+textarea{
+    height:8em ;
+}
+.contact-us .container .contact2 .btn{
+    
+  display: flex;
+  align-items: center;   /* لتوسيط الأيقونة مع النص عموديًا */            /* مسافة بين الأيقونة والكلام */
+  background-color: #8B4513;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  width: fit-content;
+  padding: 10px 30px;
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.visiblex{
+    font-size: 1.5em ;
+    color: #f1ebeb;
+    cursor: pointer;
+   
+}
+.visiblex:hover{
+    transform: scale(1.1);
+}
+.visible{
+    display: none;
+    transition: .5s ease;
+}
+.navbar{
+    position: absolute;
+    min-height: 100vh;
+    background-color: #f1ebeb;
+    padding: 2em;
+    z-index: 1000;
+
+}
+.navbar ul {
+       list-style-type: none;
+       display: flex;
+       flex-direction: column;
+}
+.navbar ul a{
+       text-decoration: none;
+       color: #312f2f;
+       font-weight: 500;
+       font-size: 1.1em;
+       
+}
+.navbar a{
+    margin:30px 10px;
+    padding: 10px 20px;
+}
+.navbar a:hover{
+    background-color: #000000;
+    border-radius: 10px;
+    
+    
+}
+.navbar ul a:hover{
+color: #f1ebeb;
+}
+
+@media(max-width:1200px)and (min-width:700px){
+   .main-section .left-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   }
+   .about-us{
+    margin-bottom: 30px;
+   }
+   .contact-us .container{
+    flex-direction: column-reverse;
+    align-items: center;
+
+
+   }
+   .contact-us .container form{
+    margin-bottom: 30px;
+   }
+
+     
+   .contact-us .container .contact2 input ,textarea {
+    width:80vw;
+   }
+
+   .contact-us .contact-info p{
+     font-size:1.3em;
+     
+    line-height: 40px;
+}
+
+   
+ #btn{
+    width: 100%;
+   }
+   
+}
+
+
+
+.contact-us i{
+    font-size: 1.3em;
+}
+
+
+@media (max-width:750px){
+    .visible{
+    display: block;
+}
+
+    header{
+        min-height: fit-content;
+        padding-bottom: 10px;
+    }
+    nav .navigation{
+          display: none;
+    }
+    .main-section  .naviation-header {
+        flex-direction: column; 
+        margin: 1em;
+    }
+    
+    
+    .about-us{
+        margin: 6em 0;
+    }
+    .about-us  .image-about{
+        width: 15em;
+        height: 15em;
+    }
+    .about-us .image-about img{
+       width: 100%;
+    }
+
+    
+
+    /* القائمة مخفية افتراضيًا */
+.navbar {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.4s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* عند ظهور القائمة */
+.navbar.show {
+  max-height: 500px; /* حسب عدد العناصر */
+}
+
+/* القائمة نفسها */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar ul a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* أيقونة القائمة */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 1em;
+}
+
+/* تظهر الأيقونة فقط في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+    .toggle{
+        display: none;
+        
+    }
+     .main-section .left-text .naviation-header a{
+   margin: 0.5em 0 0.5em 0 ;
+   margin-right: 3em;
+   
+   
+   padding: 0.5em 1em;
+   
+   
+}
+
+  .contact-us .container{
+    flex-direction: column-reverse;
+    align-items: center;
+
+
+   }
+
+   .contact-us .container form{
+    margin-bottom: 30px;
+   }
+ #btn{
+    width: 100%;
+   }
+
+
+.gallery .container img{
+    width: 90vw;
+    margin: 0.7em;
+    border-radius: 1em;
+}
+
+    .about-us .text p{
+        width: 20em;
+    }
+    .menu .container .card{
+        width: 20em;
+    }
+    .menu p{
+        width: 20em;
+    }
+   
+    .contact-us{
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+    
+    .contact-us .container{
+     margin: 0.5em;
+    }
+    .contact-us .container .contact2 input ,textarea{
+    width: 25em;
+    margin: 0.4em 0;
+    height: 2.8em;
+    border-radius: 0.5em;
+    border-style: none;
+    padding: 10px;
+}
+    textarea{
+    height:8em ;
+}
+.contact-us .contact-info p{
+    color: #0000007e;
+}
+.visible{
+    display: block;
+}
+
+}
+
+@media (width:1024px){
+    header{
+       min-height: 140vh;
+    }
+   
+}
+@media ( (max-width:400px) ) {
+    header{
+        height: 130vh;
+    }
+}
+
+
+@media(max-width:900px) {
+    
+
+.contact-us .container #btn{
+    
+    width: 100%;
+   }
+   header{
+    height: 120vh;
+   }
+
+}
+
+
+
