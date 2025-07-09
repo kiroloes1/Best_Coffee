@@ -32,6 +32,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
+        <!-- auto animation  -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+      <!-- تحميل مكتبة Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
@@ -49,7 +57,8 @@
     <link rel="icon" href="./pic/coffee-hero-section.ico" />
   </head>
   <body>
-    <div class="navbar toggle">
+    <div
+    class="navbar toggle">
            <ul>
             <div>
                  <h1 style="margin-bottom: 1em; display: flex; justify-content: center;">Coffee</h1>
@@ -88,16 +97,24 @@
       <section class="main-section">
         <!-- left side header -->
 
-        <div class="left-text">
-          <h2>Best Coffe</h2>
-          <h3>Make your day great with our special coffee</h3>
-          <p>
+        <div  class="left-text">
+          <h2   data-aos="fade-down" data-aos-duration="1000" >Best Coffe</h2>
+          <h3 
+          data-aos="fade-up" data-aos-duration="1000"
+          >Make your day great with our special coffee</h3>
+          <p
+          data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"
+          >
             Welcome to our coffee paradies where every bean tells <br />
             a story and every cup sparks joy
           </p>
           <div class="naviation-header">
-            <a class="order" href="#">Order Now</a>
-            <a class="contact" href="#">Contact Us</a>
+            <a
+            data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500"
+            class="order" href="#">Order Now</a>
+            <a
+            data-aos="flip-down" data-aos-duration="1000" data-aos-delay="500"
+            class="contact" href="#">Contact Us</a>
           </div>
         </div>
 
@@ -111,15 +128,22 @@
     <!-- main -->
     <main>
       <!-- about us section -->
-      <section class="about-us">
+      <section
+      
+      class="about-us">
         <!-- left-side image -->
-        <div class="image-about">
+        <div class="image-about"
+        data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
           <img src="./pic/about-image.jpg" alt="" />
         </div>
 
         <!-- text -->
-        <div class="text">
-          <h2>ABOUT US</h2>
+        <div 
+     data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+        class="text">
+          <h2 >ABOUT US</h2>
           <hr />
           <p>
             At Coffee House in Berndorf, Germany, we pride ourselves on being a
@@ -143,7 +167,7 @@
         <hr />
         <div class="container">
           <!-- card 1 -->
-          <div class="card">
+          <div  data-aos="fade-down"data-aos-duration="1000" class="card">
             <img src="./pic/hot-beverages.png" alt="menu-image" />
             <h3>Hot Beverages</h3>
             <p>
@@ -153,7 +177,7 @@
           </div>
 
           <!-- card 2 -->
-          <div class="card">
+          <div  data-aos="zoom-in" data-aos-duration="1000" class="card">
             <img src="./pic/cold-beverages.png" alt="menu-image" />
             <h3>Cold Beverages</h3>
             <p>
@@ -163,7 +187,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="card">
+          <div data-aos="zoom-out" data-aos-duration="1000" class="card">
             <img src="./pic/desserts.png" alt="menu-image" />
             <h3>Desserts</h3>
             <p>
@@ -173,7 +197,7 @@
           </div>
 
           <!-- card 4 -->
-          <div class="card">
+          <div data-aos="flip-down" data-aos-duration="1000" class="card">
             <img src="./pic/special-combo.png" alt="menu-image" />
             <h3>Special Combo</h3>
             <p>
@@ -183,7 +207,7 @@
           </div>
 
           <!-- card 5 -->
-          <div class="card">
+          <div data-aos="flip-up" data-aos-duration="1000" class="card">
             <img src="./pic/burger-frenchfries.png" alt="menu-image" />
             <h3>Burger & French Fries</h3>
             <p>
@@ -193,7 +217,7 @@
           </div>
 
           <!-- card 6 -->
-          <div class="card">
+          <div data-aos="fade-up" data-aos-duration="1000" class="card">
             <img src="./pic/refreshment.png" alt="menu-image" />
             <h3>Refreshment</h3>
             <p>
@@ -208,8 +232,8 @@
       <section class="gallery">
         <h2>GALLARY</h2>
         <hr />
-        <div class="container">
-          <img src="./pic/gallery-1.jpg" alt="gallery-image " />
+        <div data-aos="zoom-in" data-aos-duration="1000" class="container">
+          <img  src="./pic/gallery-1.jpg" alt="gallery-image " />
           <img src="./pic/gallery-2.jpg" alt="gallery-image " />
           <img src="./pic/gallery-3.jpg" alt="gallery-image " />
           <img src="./pic/gallery-4.jpg" alt="gallery-image " />
@@ -252,6 +276,12 @@
       </section>
     </main>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <script src="script.js"></script>
+    
   </body>
 </html>
