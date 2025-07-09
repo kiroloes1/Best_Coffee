@@ -83,7 +83,7 @@ nav .navigation ul li a{
     display: flex;
     align-items: center;
     margin: 0.5em;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
     align-content: center;
@@ -165,7 +165,7 @@ transition: 0.5s ease-in-out;
 main .about-us{
     display: flex;
     justify-content: space-around;
-    height: 70vh;
+   min-height: 70vh;
     align-items: center;
     margin-top: 5em;
     padding: 10px  2em;
@@ -174,7 +174,7 @@ main .about-us{
 }
 .about-us .image-about{
     width:25em;
-    height: 25em;
+    min-height: 25em;
     margin: 10px;
     
 }
@@ -486,6 +486,11 @@ color: #f1ebeb;
      
     line-height: 40px;
 }
+.contact-us .container #btn{
+    
+    width: 100%;
+   }
+ 
 
    
  #btn{
@@ -502,6 +507,8 @@ color: #f1ebeb;
 
 
 @media (max-width:750px){
+
+
     .visible{
     display: block;
 }
@@ -513,6 +520,12 @@ color: #f1ebeb;
     nav .navigation{
           display: none;
     }
+       nav{
+       display: flex;
+    justify-content: space-between;
+    margin: 0 1em 2em 1em;
+   
+}
     .main-section  .naviation-header {
         flex-direction: column; 
         margin: 1em;
@@ -533,16 +546,6 @@ color: #f1ebeb;
     
 
 
-/* تظهر الأيقونة فقط في الشاشات الصغيرة */
-@media (max-width: 768px) {
-
-   nav{
-       display: flex;
-    justify-content: space-between;
-    margin: 0 1em 2em 1em;
-   
-}
-   }
 
 
   
@@ -617,34 +620,16 @@ color: #f1ebeb;
 .visible{
     display: block;
 }
-
+.image {
+    margin-top: 5em;
+    max-width: 30em;
 }
-
-@media (width:1024px){
-    header{
-       min-height: 140vh;
-    }
-   
-}
-@media ( (max-width:400px) ) {
-    header{
-        height: 130vh;
-    }
-}
-
-
-@media(max-width:900px) {
-    
-
-.contact-us .container #btn{
-    
+.image img{
     width: 100%;
-   }
-   header{
-    height: 120vh;
-   }
+}
 
 }
+
 
 
   .toggle{
