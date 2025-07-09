@@ -21,7 +21,6 @@ header{
 }
 nav {
     display: flex;
-    
     justify-content: space-between;
     margin: 0 5em 2em 5em;
     align-items: center;
@@ -417,6 +416,46 @@ textarea{
 color: #f1ebeb;
 }
 
+
+    /* القائمة مخفية افتراضيًا */
+.navbar {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.4s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* عند ظهور القائمة */
+.navbar.show {
+  max-height: 500px; /* حسب عدد العناصر */
+}
+
+/* القائمة نفسها */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar ul a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* أيقونة القائمة */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 1em;
+}
+
 @media(max-width:1200px)and (min-width:700px){
    .main-section .left-text{
     display: flex;
@@ -493,56 +532,23 @@ color: #f1ebeb;
 
     
 
-    /* القائمة مخفية افتراضيًا */
-.navbar {
-  max-height: 0;
-  overflow: hidden;
-  background-color: #fff;
-  transition: max-height 0.4s ease-in-out;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* عند ظهور القائمة */
-.navbar.show {
-  max-height: 500px; /* حسب عدد العناصر */
-}
-
-/* القائمة نفسها */
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.navbar ul a {
-  display: block;
-  padding: 10px;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* أيقونة القائمة */
-.menu-icon {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  margin: 1em;
-}
 
 /* تظهر الأيقونة فقط في الشاشات الصغيرة */
 @media (max-width: 768px) {
+
+   nav{
+       display: flex;
+    justify-content: space-between;
+    margin: 0 1em 2em 1em;
+   
+}
+   }
   .menu-icon {
     display: block;
   }
 }
 
-    .toggle{
-        display: none;
-        
-    }
+  
      .main-section .left-text .naviation-header a{
    margin: 0.5em 0 0.5em 0 ;
    margin-right: 3em;
@@ -641,4 +647,7 @@ color: #f1ebeb;
 }
 
 
-
+  .toggle{
+        display: none;
+        
+    }
